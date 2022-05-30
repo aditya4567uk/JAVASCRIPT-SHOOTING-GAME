@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TAILWINDCSS LINKAGE-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <title>HACK-GDSC-TEAM-PIKACHU</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        background: #242526;
+        }
+</style>
+
+<body>
+    <!--Top left Score code-->
+    <div class="fixed text-white ml-2 mt-2 select-none">
+        <span>Score: </span>
+        <span id="scoreEl">0</span><br>
+    </div>
+    <!--STARTGAME AND OVER TEMPLATE-->
+    <div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+        <div class="bg-white max-w-md w-full p-6 text-center">
+            <h1 class="text-4xl font-bold leading-none" id="containerscore">0</h1>
+            <p class="text-sm text-gray-700 mb-4">Points</p>
+            <div id="gameover" class="flex select-none"><img src="gameover.jpg" alt="blank" height="300px"/></div>
+            <div>
+                <button class="bg-red-500 text-white w-full py-3" id="startgamebtn">Start Game</button>
+            </div>
+            <p class="text-sm text-gray-700 mb-4"><b style="margin-top: 10px;">Hold Left mouse to fire ,Hitting Point: 100 and killing: 250</b></p>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+</body>
+
+<!--SCRPITS ,GSAP LIB , Index.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+
+</html>
