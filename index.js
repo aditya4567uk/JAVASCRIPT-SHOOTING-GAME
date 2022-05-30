@@ -274,4 +274,4 @@ startgamebtn.addEventListener('click',()=>{
     spawnEnemies();
     musicplay();
 })
-alert('Made by Team PICKACHU - ADITYA KUMAR, CHETAN SAINI, TANZEEL KHAN, AYUSH KESARWANI');
+//alert('Made by Team PICKACHU - ADITYA KUMAR, CHETAN SAINI, TANZEEL KHAN, AYUSH KESARWANI');
